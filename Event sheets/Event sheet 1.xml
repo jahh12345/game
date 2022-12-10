@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <variable constant="0" name="timer" sid="676228597541072" static="0" type="number">20</variable>
+        <variable constant="0" name="timer" sid="676228597541072" static="0" type="number">60</variable>
         <variable constant="0" name="score" sid="930431403888414" static="0" type="number">0</variable>
         <event-block sid="742879508106916">
             <conditions>

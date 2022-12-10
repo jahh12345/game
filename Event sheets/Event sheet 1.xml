@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="timer" sid="676228597541072" static="0" type="number">10</variable>
+        <variable constant="0" name="score" sid="930431403888414" static="0" type="number">0</variable>
+        <event-block sid="742879508106916">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="930257866751276" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="695285300159977">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="747878459659308" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="386765113258613" type="System">
+                            <param id="0" name="Object to create">Sprite2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">random(50,800)</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="718391396372107" type="Sprite2">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="697254216981064" type="Sprite2">
+                            <param id="0" name="Speed">50</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="855151437962769" type="Sprite2">
+                            <param id="0" name="Frame number">choose(0,1,2,3,4,5,6)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="245763171427038">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="535867724414157" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="907215956413034">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="926345553822438" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="463677699292891" type="System">
+                            <param id="0" name="Object to create">Sprite3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">random(50,800)</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="285815175430496" type="Sprite3">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="973251444365211" type="Sprite3">
+                            <param id="0" name="Speed">50</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="264059655618689" type="Sprite3">
+                            <param id="0" name="Frame number">choose(0,1,2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="975308660219565">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="845452585286708" type="Sprite">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="787876512782510" type="Sprite2" />
+                <action id="-10" name="Add to" sid="276115194120623" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="667169525347813">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="550824297789592" type="Sprite">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="693760242732717" type="Sprite3" />
+                <action id="-11" name="Subtract from" sid="614459619026443" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="275611580731581">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="444723508190771" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="503680565870103" type="score">
+                    <param id="0" name="Text">score</param>
+                </action>
+                <action id="0" name="Set text" sid="117476149739885" type="timer">
+                    <param id="0" name="Text">timer</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="914546760820095">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="241692874771058" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="202599880416873" type="System">
+                    <param id="0" name="Layer">&quot;win&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="472897873452709">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="335673525767894" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="655335732901220">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="371139865565639" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="501977034914890" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="514137546735814">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="913963041841186" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="489331545904443" type="System">
+                            <param id="0" name="Layer">&quot;win&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="795257887653598">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="425765453446196" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="440990714987286" type="System" />
+                <action id="-21" name="Reset global variables" sid="148509913868860" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="618835084676680">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="684559270335886" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="634396381323996" type="Sprite2" />
+                <action id="-9" name="Destroy" sid="150702649469901" type="Sprite3" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

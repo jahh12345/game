@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1n7w1yh0dr4r2</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="643233245820035">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite" sid="229799521548186">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="858369093408624">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="309812917488336">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763453631393908" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502058" original-source="C:\Users\ja\Downloads\MonkeyBasket.png">
+                        <collision-poly>
+                            <point x="0.273077" y="0.72428" />
+                            <point x="0.519231" y="0.687243" />
+                            <point x="0.507692" y="0.934156" />
+                            <point x="0.338462" y="0.958848" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="860303826875152">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="730743757250310">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="421766263030864">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220382597681212" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\IsFunc1.PNG" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\IsFunc2.PNG" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\IsFunc3.PNG" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\IsFunc4.PNG" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\IsFunc5.PNG" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\IsFunc6.PNG" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\IsFunc7.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="751781185816495">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="459262357437893">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="411134495412183">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="120566670851751" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\notFunc1.PNG" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\notFunc2.PNG" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500444" original-source="C:\Users\ja\Downloads\notFunc3.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="977187297434658">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351524226566125" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="timer" sid="852539712185017">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="score" sid="696679445381429">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite5" sid="158736586655810">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="768331395165399" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ja\Downloads\game\Gameover.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="800078183931048">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="259986900435386" speed="5">
+                    <frame duration="1" hotspotX="0.500654" hotspotY="0.5" original-source="C:\Users\ja\Downloads\game\Button2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="485887404373043">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629922493372037" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="670083485729593">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="644325566016366">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\ja\Downloads\forestBG.jpg" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="170046495913003">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\ja\Downloads\forestBG.jpg" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="435008663391254">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\ja\Downloads\forestBG.jpg" />
+        </object-type>
+        <object-type name="Sprite8" sid="534853602516647">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941855540476378" speed="5">
+                    <frame duration="1" hotspotX="0.50063" hotspotY="0.501587" original-source="C:\Users\ja\Downloads\game\Button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="277982884440119">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255924400709486" speed="5">
+                    <frame duration="1" hotspotX="0.500654" hotspotY="0.5" original-source="C:\Users\ja\Downloads\game\Button2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="409713289662237">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite10" sid="329255620231906">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351311342854771" speed="5">
+                    <frame duration="1" hotspotX="0.50063" hotspotY="0.501587" original-source="C:\Users\ja\Downloads\game\Button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="564996673454285">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="998640957460769" speed="5">
+                    <frame duration="1" hotspotX="0.500654" hotspotY="0.5" original-source="C:\Users\ja\Downloads\game\Button2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="804472937714853">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="431059632640772">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="score2" sid="785103319359671">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="289731485748670">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text5" sid="666508178924195">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="11" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
